@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 16 px;
+}
+
+body {
+    background-color: rgb(87, 87, 87);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    margin: auto 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: rgb(155, 155, 155);
+    width: 50rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 1rem;
+    height: 1.5rem;
+}
+
+label {
+    padding-right: 2rem;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+}
+
+input [radio] {
+    margin-right: 10rem;
+}
+
+label {
+    padding-bottom: 1rem;
+}
+
+input {
+    padding: 0.15rem;
+    margin-bottom: 0.9rem;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+}
+
+textarea {
+    min-height: 5rem;
+    min-width: 30rem;
+    max-height: 5rem;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.textarea {
+    padding-bottom: 5rem;
+}
+
+.first-column {
+    width: 16rem;
+}
+
+input [text] {
+    width: 37rem;
+}
+
+#checkbox {
+    width: 1rem;
+}
+
+#reset , #submit{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.star {
+    font-size: 0.9rem;
+    color: rgb(182, 0, 0);
+    padding: 0;
+}
+
+input:invalid {
+    border: 3px solid rgb(176, 5, 5);
+}
+
+#reset:hover , #submit:hover{
+    background-color: rgb(153, 153, 153);
+}
+
+#reset:active , #submit:active{
+    background-color: rgb(78, 78, 78);
+}
+
+#name:focus , #age:focus , #text-area:focus {
+    background-color: rgb(123, 123, 123);
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute; 
+    width: 22rem;
+    left: 0; top: 0; 
+    background-color: black;
+    color: white; 
+    padding: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 0.5rem;
+    opacity: 0; 
+    transition: 1s;
+  }
+
+[data-tooltip]:hover::after {
+    opacity: 1; 
+    top: 2rem; 
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.second {
+    padding: 0;
+    border: 0;
+    background-color: rgb(87, 87, 87);
+}
+
+a {
+    color: rgb(117, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(158, 0, 0);
+}
+
+a:active {
+    color: rgb(0, 0, 0);
+}

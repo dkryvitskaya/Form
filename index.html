@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/jost-3" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h1>Форма для заполнения</h1>
+        <form action="./second-page.html">
+            <legend></legend>
+            <fieldset class="first">
+                <fieldset class="first-column">
+                    <label for="name">Ваше имя<label class="star">*</label>:</label>
+    
+                    <label for="age">Ваш возраст<label class="star">*</label>:</label>
+                    
+                    <label>Ваш пол<label class="star">*</label>:</label>
+    
+                    <label for="file">Ваше резюме<label class="star">*</label>:</label>
+    
+                    <label for="text-area" class="textarea">Пару слов о себе:</label>
+    
+                    <label for="checkbox" data-tooltip="В связи с законом об использовании персональных данных">Согласен(-а) на обработку персональных данных:<label class="star">*</label>:</label>
+                </fieldset>
+    
+                <fieldset class="second-column">
+                    <input 
+                    type="text"
+                    pattern="[a-zA-Zа-яА-ЯёЁ]{2,12}"
+                    required
+                    id="name"
+                    name="name"
+                    placeholder="Введите имя"
+                    />
+    
+                    <input 
+                    type="number"
+                    required
+                    min="1"
+                    max="150"
+                    id="age"
+                    name="age"
+                    placeholder="Введите возраст"
+                    />
+                    
+                    <fieldset class="radio">
+                        <input type="radio" required name="sex" id="male" />
+                        <label for="male">Мужской</label>
+                        <input type="radio" name="sex" id="female" />
+                        <label for="female">Женский</label>
+                    </fieldset>
+    
+                    <input type="file" required name="file" id="file" />
+    
+                    <textarea
+                      name="info"
+                      id="text-area"
+                    ></textarea>
+                    <input type="checkbox" required name="checkbox" id="checkbox" />
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="buttons">
+                <input type="reset" name="reset" id="reset" />
+                <input type="submit" name="submit" id="submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
